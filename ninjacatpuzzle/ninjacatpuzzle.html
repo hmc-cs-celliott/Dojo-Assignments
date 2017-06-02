@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="ninjacatpuzzle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('img').click(function(){
+				console.log($(this).attr('src'));
+				var temp = $(this).attr('src');
+				var alt = $(this).attr('alt-src');
+				$(this).attr('src', alt);
+				$(this).attr('alt-src', temp);
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<img src="img/cat0.png" alt-src="img/ninja0.png"/>
+	<img src="img/cat1.png" alt-src="img/ninja1.png"/>
+	<img src="img/ninja2.png" alt-src="img/cat2.png"/>
+	<img src="img/ninja3.png" alt-src="img/cat3.png"/>
+	<img src="img/ninja4.png" alt-src="img/cat4.png"/>
+</body>
+</html>

@@ -1,0 +1,230 @@
+/*css reset settings*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#page_container{
+	background-color: #111111;
+	padding: 8px;
+}
+#header{
+	background-color: #1a1a1a;
+	height: 120px;	
+	width: 980px;
+	font-family: sans-serif;
+
+}
+#header img{
+	margin-top: 25px;
+	margin-left: 20px;
+	display: inline-block;
+}
+#header span{
+	color: #cdcccc;
+	margin-left: 550px;
+	margin-top: 30px;
+	font-size: .9em;
+	display: inline-block;
+	vertical-align: top;	
+}
+#main_navigation{
+	background: -moz-linear-gradient(top, #555555 0%,  #1c1c1c 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #555555 0%, #1c1c1c 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #555555 0%, #1c1c1c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	height: 50px;
+	width: 980px;
+	font-family: sans-serif;
+}
+#main_navigation ul{
+	margin-left: 20px;
+}
+#main_navigation li{
+	display: inline-block;
+	height: 25px;
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 10px;
+	padding-left: 5px;
+	padding-right: 25px;
+    
+}
+#main_navigation li:not(#no_bar){
+	border-width: 1px 1px 1px 0;
+    border-style: solid;
+	border-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+	box-shadow: 5px -1px 0px -4px rgba(79,79,79,1);
+}
+#main_navigation a:not(#clicked){
+	text-decoration: none;
+	color: #a0a09e;
+	font-size: .9em;
+}
+#clicked{
+	text-decoration: none;
+	color: #d7d6d3;
+	font-size: .9em;
+}
+#main_navigation span{
+	font-size: .01em;
+	vertical-align: middle;
+}
+#image_section{
+	height: 355px;
+	width: 980px;
+	border-bottom: 7px solid #3b3b3b;
+
+}
+#image_section img{
+	width: 980px;
+}
+#topics{
+	height: 170px;
+	width: 980px;
+	background-color: #1a1a1a;
+}
+#topics li{
+	display: inline-block;
+	height: 200px;
+	width: 240px;
+}
+#topics img{
+	display: inline-block;
+	width: 45px;
+	vertical-align: top;
+	margin-top: 38px;
+	margin-left: 20px;
+}
+.text_section{
+	display: inline-block;
+	width: 160px;
+	vertical-align: top;
+	margin-top: 38px;
+	margin-left: 10px;
+}
+#topics p{
+	color: #d56c31;
+	font-size: 1.26em;
+	line-height: 27px;
+
+}
+#topics span{
+	font-size: .75em;
+	color: #c1c3c4;
+	font-family: sans-serif;
+
+}
+#advertisement{
+	height: 170px;
+	width: 980px;
+	font-family: sans-serif;
+	background: repeating-linear-gradient(145deg, #171717, #171717 2px, #050505 2px, #050505 4px);
+	
+}
+#ad_description{
+	width: 700px;
+	display: inline-block;
+}
+#ad_description h2{
+	margin-left: 40px;
+	margin-top: 40px;
+	color: #f2f2f2;
+	font-size: 1.4em;
+	font-weight: 400;
+}
+#ad_description p{
+	color: #a7a5a6;
+	margin-left: 40px;
+	margin-top: 15px;
+	font-size: .9em;
+	line-height: 22px;
+}
+#advertisement button{
+	display: inline-block;
+	height: 40px;
+	width: 120px;
+	background: -moz-linear-gradient(top, #f09c62 0%,  #eb7e39 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f09c62 0%, #eb7e39 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f09c62 0%, #eb7e39 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border: none;
+	border-radius: 5px;
+	color: #f9eaf5;
+	font-size: 1em;
+	vertical-align: top;
+	margin-left: 100px;
+	margin-top: 60px;
+}
+#portfolio{
+	background-color: #1a1a1a;
+	height: 380px;
+	width: 980px;
+	
+}
+#portfolio_header{
+	height: 80px;
+	width: 980px;
+}
+#portfolio_header span{
+	display: inline-block;
+	color: #f1f1f1;
+	font-size: 1.28em;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+#portfolio_title{
+	display: inline-block;
+	text-decoration: none;
+	font-style: italic;
+	color: #ca6a30;
+	font-family: sans-serif;
+	font-size: .8em;
+	margin-left: 750px;
+	margin-top: 25px;
+
+}
+#portfolio li{
+	display: inline-block;
+	vertical-align: top;
+	height: 200px;
+	width: 220px;
+	margin-left: 17px;
+}
+#portfolio img{
+	height: 135px;
+	width: 210px;
+	border: 4px solid #363636;
+}
+#portfolio a:not(#portfolio_title){
+	font-size: 1.1em;
+	color: #e47836;
+	font-weight: 500;
+	line-height: 40px;
+	text-decoration: none;
+}
+#portfolio p{
+	font-family: sans-serif;
+	color: #c5c5c4;
+	font-size: .75em;
+	line-height: 18px;
+}
+#footer{
+	height: 20px;
+	width: 980px;
+	background-color: #1a1a1a;
+}
+#footer a{
+	margin-left: 900px;
+	font-size: .6em;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #686767;
+}
+
+
+
+
+
+
+
+
+
+

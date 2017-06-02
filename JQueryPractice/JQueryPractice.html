@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="JQueryPracticeStyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('img').click(function(){
+				$(this).hide();
+			});
+			$('#restore').click(function(){
+				$('img').show();
+			});
+		});
+		
+	</script>
+</head>
+<body>
+	<img src="http://static.boredpanda.com/blog/wp-content/uploads/2015/06/pallas-cat-manul-2__880.jpg" />
+	<img src="http://static.boredpanda.com/blog/wp-content/uploads/2015/06/pallas-cat-manul-17__880.jpg" />
+	<img src="http://static.boredpanda.com/blog/wp-content/uploads/2015/06/pallas-cat-manul-14__880.jpg" />
+	<img src="https://blog-photos.dogvacay.com/blog/wp-content/uploads/2015/03/funny-cat-with-a-towel.jpg" />
+	<img src="http://blog.nekoflies.com/wp-content/uploads/2014/01/funny-cat.jpg" />
+	<img src="https://www.wired.com/wp-content/uploads/2014/10/cat-ft.jpg" />
+	<img src="https://i.ytimg.com/vi/icqDxNab3Do/maxresdefault.jpg" />
+	<img src="https://i.ytimg.com/vi/prALrHUJ8Ns/hqdefault.jpg" />
+	<button id="restore" type="button">Restore</button>
+</body>
+</html>

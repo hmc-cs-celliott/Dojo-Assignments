@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add User Form and Table</title>
+	<link rel="stylesheet" type="text/css" href="add_user.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(){
+				var name = $('#first_name').val();
+				var last = $('#last_name').val();
+				var email = $('#email').val();
+				var phone = $('#contact').val();
+				$('#user_table').append("<tr><td>" + name + "</td><td>" + last + "</td><td>" + email + "</td><td>" + phone +"</td></tr>");
+			})
+		})
+	</script>
+</head>
+<body>
+	<table id="user_table">
+		<tr id="header">
+			<td>First Name</td>
+			<td>Last Name</td> 
+			<td>Email Address</td>
+			<td>Contact #</td>
+		</tr>	
+	</table>
+	<h1>Add User</h1>
+	<form action="" id="user_form">
+		<p>First Name: <input type="text" id="first_name" name="first_name" placeholder="First Name"></p>
+		<p>Last Name: <input type="text" id="last_name" name="last_name" placeholder="Last Name"></p>
+		<p>Email Address: <input type="text" id="email" name="email" placeholder="Email Address"></p>
+		<p>Contact No.: <input type="text" id="contact" name="contact" placeholder="Phone #"></p>
+		<p><button type="button" value="submit">Add User</button></p>
+	</form>
+
+</body>
+</html>

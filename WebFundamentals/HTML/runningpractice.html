@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function chance(quarters){
+			while(quarters > 0){
+				var win = Math.ceil(Math.random()*100);
+				quarters--;
+				if (win == 100) {
+					var earnings = Math.ceil(Math.random()*50+50);
+					return (quarters + earnings);
+				}
+			}
+			return 0;
+		}
+	</script>
+	"use strict";
+</head>
+</html>

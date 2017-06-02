@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Coding_dojo_arena.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="Coding_dojo_arena.js"></script>
+	<title>Coding Dojo Arena</title>
+</head>
+<body>
+	<div id="page_container">
+		<img id="background_image" src="beach.jpg" alt_1="beach.jpg" alt_2="earth.jpg" alt_3="dojo.jpg" alt_4="forest.jpg" alt_5="matrix.jpg" alt_6="snow.jpg">
+		<div id="dialogue_box">
+			<div id="arena_select">
+				<h2>Select Arena</h2>
+				<button class="arena_button" id="beach" type="button">beach</button>
+				<button class="arena_button" id="planet" type="button">planet</button>
+				<button class="arena_button" id="dojo" type="button">dojo</button>
+				<button class="arena_button" id="forest" type="button">forest</button>
+				<button class="arena_button" id="matrix" type="button">matrix</button>
+				<button class="arena_button" id="snow" type="button">snow</button>
+			</div>
+			<div id="player_select">
+				<h2>Select Players</h2>
+				<select id="select_ninja_left" name="select_ninja_left">
+					<option id="select_ninja_left">Select Ninja</option>
+					<option class="valid_character_left" value="Leo_left" img_src="leo.png">Leonardo</option>
+					<option class="valid_character_left" value="Raph_left" img_src="raphael.png">Raphael</option>
+					<option class="valid_character_left" value="Donny_left" img_src="donny.png">Donny</option>
+					<option class="valid_character_left" value="Mikey_left" img_src="mikey.png">Mikey</option>
+				</select>
+				<select id="select_ninja_right" name="select_ninja_right">
+					<option id="select_ninja_right">Select Ninja</option>
+					<option class="valid_character_right" value="Leo_right" img_src="leo.png">Leonardo</option>
+					<option class="valid_character_right" value="Raph_right" img_src="raphael.png">Raphael</option>
+					<option class="valid_character_right" value="Donny_right" img_src="donny.png">Donny</option>
+					<option class="valid_character_right" value="Mikey_right" img_src="mikey.png">Mikey</option>
+				</select>
+			</div>
+		</div><!-- end of dialogue box -->
+		<div id="player_div_left">
+			<img id="player_image_left" src="leo.png">
+		</div>
+		<div id="player_div_right">
+			<img id="player_image_right" src="leo.png">
+		</div>
+
+	</div>
+</body>
+</html>

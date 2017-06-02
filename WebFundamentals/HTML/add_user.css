@@ -1,0 +1,36 @@
+#header{
+	border: 1px solid black;
+	/*display: inline-block;*/
+	font-weight: bold;
+	
+}
+td{
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+}
+#header td{
+	margin-right: 20px;
+	/*display: inline-block;*/
+}
+tr{
+	border: 1px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#user_table{
+	width: 500px;
+}
+h1{
+	width: 300px;
+	border-bottom: 2px solid gray;
+}
+#user_form{
+	width: 300px;
+}
+input{
+	display: inline-block;
+	/*margin-left: 90px;*/
+}
+#user_form:not(h1){
+	text-align: right;
+}

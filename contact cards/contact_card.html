@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Cards</title>
+		<link rel="stylesheet" type="text/css" href="contact_card.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#add_user_button').click(function(){
+					var name = $('#first_name').val();
+					var last = $('#last_name').val();
+					var description = $('#description').val();
+					$('ul').append("<li><button type='button' class='card'><h1>" + name + " " + last + "</h1><p class='instruction'>Click for description!</p><p class='description'>" + description + "</p></button></li>");
+					$('ul:last-child button p.description').hide();
+				});
+				$(document).on('click', '.card', function(){
+					$(this).children().toggle();
+				})
+			});
+			
+		</script>
+	</head>
+	<body>
+		<form action="">
+			<p>First Name: <input type="text" id="first_name" name="first_name" ></p>
+			<p>Last Name: <input type="text" id="last_name" name="last_name" ></p>
+			<p>Description:</p>
+			<p><input type="text" id="description" name="description" placeholder="Enter Description:"></p>
+			<button type="button" value="submit" id="add_user_button">Add User</button>
+		</form>
+		<div id="cards">
+			<ul>
+			</ul>
+		</div>
+
+	</body>
+</html>

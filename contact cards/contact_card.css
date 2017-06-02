@@ -1,0 +1,21 @@
+form{
+	width: 300px;
+}
+form p{
+}
+#description{
+	height: 75px;
+	width: 290px;
+}
+#cards{
+	width: 400px;
+	margin-left: 100px;
+}
+#cards ul{
+	list-style-type: none;
+
+}
+li button{
+	height: 100px;
+	width: 300px;
+}

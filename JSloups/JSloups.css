@@ -1,0 +1,73 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+}
+#wrapper{
+ width: 970px;
+ background-color: #1d355c;
+ margin: 0px auto;
+ padding: 10px;
+}
+#header{
+ height: 50px;
+ background-color: #cc323b;
+ margin: 0 auto;
+ color: #b1c3d1;
+ border: 0px;
+ border-radius: 10px;
+ padding: 10px;
+}
+#navigation{
+ width: 150px;
+ background-color: #2f7d8b;
+ display: inline-block;
+ margin: 20px 0px 0px 0px;
+ border: 0px;
+ border-radius: 10px;
+ padding: 5px;
+}
+#main_content{
+ height: 400px;
+ width: 700px;
+ background-color: #0f1822; 
+ color: #b1c3d1;
+ font-size: 1.05em;
+ /*position: absolute;*/
+ display: inline-block;
+ /*bottom: 30px;*/
+ margin: 20px 0px 0px 15px;
+ /*position: relative;*/
+ /*float: right;*/
+ vertical-align: top;
+ padding: 15px;
+ border: 0px;
+ border-radius: 10px;
+}
+#nav_sublist{
+list-style-type: none;
+}
+#footer{
+ height: 20px;
+ width: 950px;
+ padding: 15px;
+ background-color: #5e6672;
+ color: #b1c3d1;
+ margin-top: 20px;
+ font-size: 1.3em;
+ border: 0px;
+ border-radius: 10px;
+}
+span{
+	color: #8091f8;
+}
+a{
+	color: #65d2d2;
+	font-size: .8em;
+}
+p{
+	font-size: .8em;
+}
+ul{
+	margin-left: 20px;
+}
